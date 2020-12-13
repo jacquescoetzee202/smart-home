@@ -2,10 +2,15 @@ import initialState from "./initial";
 
 // Reducer functions
 const incrementTemp = ( state, { step } ) => {
+    
+    let targetTemp = state.targetTemp + step;
+
+    let heatingOn = targetTemp > state.currentTemp;
 
     return {
         ...state,
-        targetTemp: state.targetTemp + step,
+        targetTemp,
+        heatingOn,
     }
 };
 
