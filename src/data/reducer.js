@@ -1,26 +1,18 @@
 import initialState from "./initial";
 
 // Reducer functions
-const increaseTemp = state => (
-    {
-        ...state,
-        tartgetTemp: state.tartgetTemp + 1,
-    }
-);
+const incrementTemp = ( state, { step } ) => {
 
-const decreaseTemp = state => (
-    {
+    return {
         ...state,
-        tartgetTemp: state.tartgetTemp - 1,
+        targetTemp: state.targetTemp + step,
     }
-);
-
+};
 
 // Reducer
 const reducer = (state, action) => {
   switch (action.type) {
-    case "HTG_INCREASE": return increaseTemp(state);
-    case "HTG_DECREASE": return decreaseTemp(state);
+    case "INCREMENT_HTG": return incrementTemp( state, action );
     case "RESET": return initialState;
     default : return state;
   }

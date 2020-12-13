@@ -1,4 +1,5 @@
-import Button from "./Button";
+import ButtonInc from "./Button/ButtonInc";
+import ButtonDec from "./Button/ButtonDec";
 import fire from "../fire.svg";
 import Display from "./Display";
 
@@ -12,8 +13,8 @@ const HeatingCard = () => (
             <Display />
         </div>
         <div className="container d-flex justify-content-around mb-3 mt-5">
-            <Button text={ "+" }/>
-            <Button text={ "-" }/>
+            <ButtonInc text={ "+" }/>
+            <ButtonDec text={ "-" }/>
         </div>
     </div>
 );
