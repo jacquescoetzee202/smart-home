@@ -1,7 +1,7 @@
 .icon_on {
-  background-color: orange;
+  fill: orange;
 }
 
 .icon_off {
-  background-color: grey;
+  fill: grey;
 }
