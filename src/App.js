@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <header>  
       </header>
-      <HeatingCard/>
+      <div className="container">
+        <HeatingCard/>
+      </div>
     </div>
   );
 }

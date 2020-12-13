@@ -1,7 +1,7 @@
 const Button = ({text}) => (
     <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary btn-lg"
     >
         { text }
     </button>
