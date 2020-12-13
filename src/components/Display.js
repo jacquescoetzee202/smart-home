@@ -1,9 +1,9 @@
 const Display = () => (
     <div className="container mt-3">
-        <p>target</p>
-        <p>20</p>
-        <p>current</p>
-        <p>18</p>
+        <h3>target</h3>
+        <h1>20</h1>
+        <h3>current</h3>
+        <h1>18</h1>
     </div>
 );
 
